@@ -1,0 +1,74 @@
+/* Set default font and background colors */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Style header and navigation bar */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center the list items */
+}
+nav li {
+  display: inline-block; /* Display list items horizontally */
+  margin-right: 20px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style contact form section */
+.contact-form {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+}
+.contact-form h2 {
+  text-align: center;
+}
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.contact-form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Style footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+footer .social-icon {
+  display: inline-block;
+  margin: 0 10px;
+}
+footer .social-icon i {
+  font-size: 2rem;
+}

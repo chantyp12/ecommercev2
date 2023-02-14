@@ -1,0 +1,165 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: Arial, sans-serif; 
+  background-color: #f1f1f1; 
+}
+
+.page-wrap {
+  min-height: 100vh;
+  /* min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  height: 142px; 
+  display: block;
+}
+footer, .page-wrap:after {
+  height: 142px; 
+}
+
+header {
+  background-color: #333; 
+  color: white; 
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header nav ul li {
+  float: left;
+}
+
+header nav ul li a {
+  display: block;
+  color: white; 
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  background-color: #111;
+}
+
+footer {
+  background-color: #333; 
+  color: white; 
+  text-align: center;
+  padding: 60px;
+  margin: auto;
+  /* display: flex; */
+  /* align-items: center;*/
+  /* margin-bottom: -50px; */
+}
+
+footer .col {
+  display: flex;
+  justify-content: center;
+}
+
+footer .col .social-icon {
+  color: white; 
+  text-decoration: none;
+  margin: 0 0.5em;
+}
+
+.social-icon{
+  height: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* .fab-fa-facebook-square{
+  height: 30px;
+  padding-left: 40px;
+  padding-right:40px;
+} */
+
+
+.featured-products {
+  display: grid;
+  flex-wrap: wrap;
+  text-align: center;
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px; */
+}
+
+.featured-products li {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.featured-products img {
+  height: 650px;
+  width: 800px;
+}
+
+.featured-products h3 {
+  margin-top: 0;
+}
+
+.featured-products button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.featured-products button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* For tablet */
+@media only screen and (min-width: 768px) {
+  header nav {
+    justify-content: space-between;
+  }
+}
+
+/* For desktop */
+@media only screen and (min-width: 1024px) {
+  .page-wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  header nav ul li {
+    float: none;
+  }
+
+  footer .col {
+    justify-content: space-between;
+  }
+}
